@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hi brodie</title>
+  <style>
+    /* Optional: Add some styles to position the buttons */
+    button {
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.pinimg.com/originals/9a/dc/ae/9adcae81022a76ab49b1058836be70ab.gif" alt="cute pussy" height="200px">
+  <h2>hey Cutie!</h2>
+  <button id="yesButton" onclick="generateAlerts()">Yes</button>
+  <button id="noButton" onclick="moveButton()">No</button>
+
+  <script>
+    function moveButton() {
+      // Get the "Yes" button element
+      var yesButton = document.getElementById("noButton");
+      
+      var maxX = window.innerWidth - yesButton.clientWidth;
+      var maxY = window.innerHeight - yesButton.clientHeight;
+
+      // Generate random position within the viewport
+      var xPos = Math.max(scrollX, Math.min(scrollX + window.innerWidth, Math.random() * maxX + scrollX));
+      var yPos = Math.max(scrollY, Math.min(scrollY + window.innerHeight, Math.random() * maxY + scrollY));
+
+      // Set the new position of the button
+      yesButton.style.position = "absolute";
+      yesButton.style.left = xPos + "px";
+      yesButton.style.top = yPos + "px";
+    }
+
+    function generateAlerts() {
+      // Alert the user with a series of messages
+      alert("wag kang pasaway cutie");
+      alert("i hope ur doing well");
+      alert("inom ka ng maraming tubig")
+      alert("ingat ka dyan 🫰🏼")
+    }
+  </script>
+
+</body>
+</html>
