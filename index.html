@@ -3,22 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hi</title>
+  <title>Calculator</title>
   <style>
-    /* Optional: Add some styles to position the buttons */
-    button {
-      padding: 10px;
-      margin: 10px;
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
     }
-  </style>
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
 </head>
 <body>
-  <img src="https://i.pinimg.com/originals/9a/dc/ae/9adcae81022a76ab49b1058836be70ab.gif" alt="cute pussy" height="200px">
-  <h2>hey Cutie!</h2>
-  <button id="yesButton" onclick="generateAlerts()">Yes</button>
-  <button id="noButton" onclick="moveButton()">No</button>
+  <!-- <img src="https://i.pinimg.com/originals/9a/dc/ae/9adcae81022a76ab49b1058836be70ab.gif" alt="cute pussy" height="200px"> -->
+  <div class="container">
+    <label for="input1">Enter number 1</label> <br>
+    <input type="text" id="input1" required> <br>
+
+    <label for="input2">Enter number 2</label> <br>
+    <input type="text" id="input2" required>
+
+    <button onclick="showAlert()">Add</button>
+</div>
 
   <script>
+    function showAlert() {
+     const input1 = document.getElementById("input1").value;
+     const input2 = document.getElementById("input2").value;
+    
+     if(!input1 || !input2){
+        alert("Please enter both numbers!");
+        return;
+     }
+     
+     const sum = parseFloat(input1) + parseFloat(input2);
+            
+            alert("Hi boss");
+            alert("I MISS YOU🫶");
+            alert("ampingg araa");
+            alert("maynta makalingkod raka pauli hehe")
+    }
+
+
     function moveButton() {
       // Get the "Yes" button element
       var yesButton = document.getElementById("noButton");
@@ -38,10 +102,10 @@
 
     function generateAlerts() {
       // Alert the user with a series of messages
-      alert("wag kang pasaway cutie");
+      alert("Hi cutie");
       alert("ampingg araa");
-      alert("hope ur doing well")
-      alert("maynta makalingkod raka pauli hehe 🫰🏼")
+      alert("MISS YOU BOSS")
+      alert("maynta makalingkod raka pauli hehe")
     }
   </script>
 
